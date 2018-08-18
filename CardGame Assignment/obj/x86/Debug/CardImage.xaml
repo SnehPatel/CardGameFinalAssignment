@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="CardGame_Assignment.CardImage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CardGame_Assignment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas Width="125.46" Height="190.08">
+            <Image x:ConnectionId='2' x:Name="Back" Source="Assets/red_back.png" Width="125.46" Height="190.08" Visibility="Visible"/>
+            <Image x:ConnectionId='3' x:Name="Ace" Source="Assets/AD.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='4' x:Name="TwoD" Source="Assets/2D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='5' x:Name="ThreeD" Source="Assets/3D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='6' x:Name="FourD" Source="Assets/4D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='7' x:Name="FiveD" Source="Assets/5D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='8' x:Name="SixD" Source="Assets/6D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='9' x:Name="SevenD" Source="Assets/7D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='10' x:Name="EightD" Source="Assets/8D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='11' x:Name="NineD" Source="Assets/9D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='12' x:Name="TenD" Source="Assets/10D.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='13' x:Name="JackD" Source="Assets/JD.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='14' x:Name="QueenD" Source="Assets/QD.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+            <Image x:ConnectionId='15' x:Name="KingD" Source="Assets/KD.png" Width="125.46" Height="190.08" Visibility="Collapsed"/>
+        </Canvas>
+    </Grid>
+</Page>
+

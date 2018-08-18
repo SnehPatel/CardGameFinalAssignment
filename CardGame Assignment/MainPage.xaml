@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="CardGame_Assignment.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CardGame_Assignment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1000" Height="800">
+
+    <Grid Margin="0,0,-28,-26">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/GBG.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <TextBlock x:Name="Title" HorizontalAlignment="Center" Margin="0,10,0,0" Text="Card Game Assigment" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="65" Grid.Column="1"/>
+
+        <StackPanel Orientation="Horizontal" Height="210" Width="500" Margin="470,200,30,400" Grid.ColumnSpan="2">
+            <Button x:Name="PickCard1" Click="PickCard1_Click">
+                <local:CardImage x:Name="Card1" Loaded="Card1_Loaded"/>
+            </Button>
+            <Button x:Name="PickCard2" Click="PickCard2_Click">
+                <local:CardImage x:Name="Card2" Loaded="Card2_Loaded"/>
+            </Button>
+            <Button x:Name="PickCard3" Click="PickCard3_Click">
+                <local:CardImage x:Name="Card3" Loaded="Card3_Loaded"/>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Height="200" Width="130" Margin="133,519,737,81" Grid.ColumnSpan="2">
+            <local:CardImage x:Name="PlayerCard"/>
+        </StackPanel>
+
+        <StackPanel Height="200" Width="130" Margin="750,519,120,81" Grid.ColumnSpan="2">
+            <local:CardImage x:Name="CPUCard"/>
+        </StackPanel>
+
+        <TextBlock x:Name="PlayerTitle" HorizontalAlignment="Left" Margin="164,724,0,0" Text="Player" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="CPUTitle" HorizontalAlignment="Left" Margin="795,724,0,0" Text="CPU" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Grid.ColumnSpan="2"/>
+
+        <TextBlock x:Name="PlayerScoreTag" HorizontalAlignment="Left" Margin="91,247,0,0" Text="Player" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="CPUScoreTag" HorizontalAlignment="Left" Margin="123,305,0,0" Text="CPU" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40" Grid.ColumnSpan="2"/>
+
+        <TextBlock x:Name="PlayerScore" HorizontalAlignment="Left" Margin="241,247,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="CPUScore" HorizontalAlignment="Left" Margin="241,305,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40" Grid.ColumnSpan="2"/>
+
+        <TextBlock x:Name="ScoreTitle" HorizontalAlignment="Left" Margin="154,189,0,0" Text="Score" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40" Grid.ColumnSpan="2"/>
+
+        <Button x:Name="Shuffle" Content="Shuffle" Click="Shuffle_Click" HorizontalAlignment="Left" Margin="324,619,0,0" VerticalAlignment="Top" Height="41" Width="137" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button x:Name="Start" Content="Start" Click="Start_Click" HorizontalAlignment="Left" Margin="568,619,0,0" VerticalAlignment="Top" Height="41" Width="137" FontSize="20" Grid.ColumnSpan="2"/>
+
+        <TextBlock x:Name="StatusMessage" HorizontalAlignment="Center" Margin="0,463,0,0" Text="Message Win/Lose" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Grid.Column="1"/>
+
+    </Grid>
+</Page>
