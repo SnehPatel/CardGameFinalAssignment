@@ -1,4 +1,5 @@
 # CardGameFinalAssignment
+#SNEH, SHUAYB, JASON
 
 STARTING THE GAME
 
